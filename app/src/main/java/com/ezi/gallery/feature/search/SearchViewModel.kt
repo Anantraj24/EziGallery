@@ -81,7 +81,7 @@ class SearchViewModel(
                 @Suppress("UNCHECKED_CAST")
                 override fun <T : ViewModel> create(modelClass: Class<T>): T {
                     val app = context.applicationContext as EziGalleryApp
-                    return SearchViewModel(app.repository, context) as T
+                    return SearchViewModel(app.repository, app) as T
                 }
             }
     }

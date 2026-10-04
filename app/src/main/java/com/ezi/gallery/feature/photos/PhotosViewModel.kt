@@ -201,7 +201,7 @@ class PhotosViewModel(
                 @Suppress("UNCHECKED_CAST")
                 override fun <T : ViewModel> create(modelClass: Class<T>): T {
                     val app = context.applicationContext as EziGalleryApp
-                    return PhotosViewModel(app.repository, app.preferences, context) as T
+                    return PhotosViewModel(app.repository, app.preferences, app) as T
                 }
             }
     }
